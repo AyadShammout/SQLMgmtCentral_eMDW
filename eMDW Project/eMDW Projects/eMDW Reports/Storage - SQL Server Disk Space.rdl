@@ -1,0 +1,540 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <Body>
+    <ReportItems>
+      <Tablix Name="matrix1">
+        <TablixCorner>
+          <TablixCornerRows>
+            <TablixCornerRow>
+              <TablixCornerCell>
+                <CellContents>
+                  <Textbox Name="textbox3">
+                    <CanGrow>true</CanGrow>
+                    <KeepTogether>true</KeepTogether>
+                    <Paragraphs>
+                      <Paragraph>
+                        <TextRuns>
+                          <TextRun>
+                            <Value />
+                            <Style>
+                              <FontFamily>Tahoma</FontFamily>
+                              <FontSize>9pt</FontSize>
+                            </Style>
+                          </TextRun>
+                        </TextRuns>
+                        <Style />
+                      </Paragraph>
+                    </Paragraphs>
+                    <rd:DefaultName>textbox3</rd:DefaultName>
+                    <Style>
+                      <Border>
+                        <Style>None</Style>
+                      </Border>
+                      <PaddingLeft>2pt</PaddingLeft>
+                      <PaddingRight>2pt</PaddingRight>
+                      <PaddingTop>2pt</PaddingTop>
+                      <PaddingBottom>2pt</PaddingBottom>
+                    </Style>
+                  </Textbox>
+                  <ColSpan>2</ColSpan>
+                </CellContents>
+              </TablixCornerCell>
+              <TablixCornerCell />
+            </TablixCornerRow>
+          </TablixCornerRows>
+        </TablixCorner>
+        <TablixBody>
+          <TablixColumns>
+            <TablixColumn>
+              <Width>1in</Width>
+            </TablixColumn>
+          </TablixColumns>
+          <TablixRows>
+            <TablixRow>
+              <Height>0.19in</Height>
+              <TablixCells>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="textbox2">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Sum(Fields!FileSizeMB.Value)</Value>
+                              <Style>
+                                <FontFamily>Tahoma</FontFamily>
+                                <FontSize>9pt</FontSize>
+                                <Format>#,0.00;(#,0.00)</Format>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>textbox2</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                  <DataElementOutput>Output</DataElementOutput>
+                </TablixCell>
+              </TablixCells>
+            </TablixRow>
+          </TablixRows>
+        </TablixBody>
+        <TablixColumnHierarchy>
+          <TablixMembers>
+            <TablixMember>
+              <Group Name="matrix1_FileType">
+                <GroupExpressions>
+                  <GroupExpression>=Fields!FileType.Value</GroupExpression>
+                </GroupExpressions>
+              </Group>
+              <SortExpressions>
+                <SortExpression>
+                  <Value>=Fields!FileType.Value</Value>
+                </SortExpression>
+              </SortExpressions>
+              <TablixHeader>
+                <Size>0.21in</Size>
+                <CellContents>
+                  <Textbox Name="FileType">
+                    <CanGrow>true</CanGrow>
+                    <KeepTogether>true</KeepTogether>
+                    <Paragraphs>
+                      <Paragraph>
+                        <TextRuns>
+                          <TextRun>
+                            <Value>=IIF(Fields!FileType.Value="ROWS","Data",Fields!FileType.Value)</Value>
+                            <Style>
+                              <FontFamily>Tahoma</FontFamily>
+                              <Color>White</Color>
+                            </Style>
+                          </TextRun>
+                        </TextRuns>
+                        <Style />
+                      </Paragraph>
+                    </Paragraphs>
+                    <rd:DefaultName>FileType</rd:DefaultName>
+                    <Style>
+                      <Border>
+                        <Color>LightGrey</Color>
+                        <Style>Solid</Style>
+                      </Border>
+                      <BackgroundColor>CadetBlue</BackgroundColor>
+                      <PaddingLeft>2pt</PaddingLeft>
+                      <PaddingRight>2pt</PaddingRight>
+                      <PaddingTop>2pt</PaddingTop>
+                      <PaddingBottom>2pt</PaddingBottom>
+                    </Style>
+                  </Textbox>
+                </CellContents>
+              </TablixHeader>
+              <DataElementOutput>Output</DataElementOutput>
+              <KeepTogether>true</KeepTogether>
+            </TablixMember>
+          </TablixMembers>
+        </TablixColumnHierarchy>
+        <TablixRowHierarchy>
+          <TablixMembers>
+            <TablixMember>
+              <Group Name="matrix1_ServerName">
+                <GroupExpressions>
+                  <GroupExpression>=Fields!ServerName.Value</GroupExpression>
+                </GroupExpressions>
+              </Group>
+              <SortExpressions>
+                <SortExpression>
+                  <Value>=Fields!ServerName.Value</Value>
+                </SortExpression>
+              </SortExpressions>
+              <TablixHeader>
+                <Size>1.63542in</Size>
+                <CellContents>
+                  <Textbox Name="ServerName">
+                    <CanGrow>true</CanGrow>
+                    <KeepTogether>true</KeepTogether>
+                    <Paragraphs>
+                      <Paragraph>
+                        <TextRuns>
+                          <TextRun>
+                            <Value>=Fields!ServerName.Value</Value>
+                            <Style>
+                              <FontFamily>Tahoma</FontFamily>
+                              <Color>White</Color>
+                            </Style>
+                          </TextRun>
+                        </TextRuns>
+                        <Style />
+                      </Paragraph>
+                    </Paragraphs>
+                    <rd:DefaultName>ServerName</rd:DefaultName>
+                    <Style>
+                      <Border>
+                        <Color>LightGrey</Color>
+                        <Style>Solid</Style>
+                      </Border>
+                      <BackgroundColor>CadetBlue</BackgroundColor>
+                      <PaddingLeft>2pt</PaddingLeft>
+                      <PaddingRight>2pt</PaddingRight>
+                      <PaddingTop>2pt</PaddingTop>
+                      <PaddingBottom>2pt</PaddingBottom>
+                    </Style>
+                  </Textbox>
+                </CellContents>
+              </TablixHeader>
+              <TablixMembers>
+                <TablixMember>
+                  <Group Name="matrix1_DatabaseName">
+                    <GroupExpressions>
+                      <GroupExpression>=Fields!DatabaseName.Value</GroupExpression>
+                    </GroupExpressions>
+                  </Group>
+                  <SortExpressions>
+                    <SortExpression>
+                      <Value>=Fields!DatabaseName.Value</Value>
+                    </SortExpression>
+                  </SortExpressions>
+                  <TablixHeader>
+                    <Size>2.78125in</Size>
+                    <CellContents>
+                      <Textbox Name="DatabaseName">
+                        <CanGrow>true</CanGrow>
+                        <KeepTogether>true</KeepTogether>
+                        <Paragraphs>
+                          <Paragraph>
+                            <TextRuns>
+                              <TextRun>
+                                <Value>=Fields!DatabaseName.Value</Value>
+                                <Style>
+                                  <FontFamily>Tahoma</FontFamily>
+                                  <FontWeight>Bold</FontWeight>
+                                </Style>
+                              </TextRun>
+                            </TextRuns>
+                            <Style />
+                          </Paragraph>
+                        </Paragraphs>
+                        <rd:DefaultName>DatabaseName</rd:DefaultName>
+                        <Style>
+                          <Border>
+                            <Color>LightGrey</Color>
+                            <Style>Solid</Style>
+                          </Border>
+                          <BackgroundColor>#c7d9f9</BackgroundColor>
+                          <PaddingLeft>2pt</PaddingLeft>
+                          <PaddingRight>2pt</PaddingRight>
+                          <PaddingTop>2pt</PaddingTop>
+                          <PaddingBottom>2pt</PaddingBottom>
+                        </Style>
+                      </Textbox>
+                    </CellContents>
+                  </TablixHeader>
+                  <TablixMembers>
+                    <TablixMember>
+                      <DataElementOutput>Output</DataElementOutput>
+                      <KeepTogether>true</KeepTogether>
+                    </TablixMember>
+                  </TablixMembers>
+                  <Visibility>
+                    <Hidden>true</Hidden>
+                    <ToggleItem>ServerName</ToggleItem>
+                  </Visibility>
+                  <DataElementOutput>Output</DataElementOutput>
+                </TablixMember>
+              </TablixMembers>
+              <DataElementOutput>Output</DataElementOutput>
+            </TablixMember>
+          </TablixMembers>
+        </TablixRowHierarchy>
+        <RepeatColumnHeaders>true</RepeatColumnHeaders>
+        <RepeatRowHeaders>true</RepeatRowHeaders>
+        <DataSetName>ServerDiskSpace</DataSetName>
+        <Top>0.95848in</Top>
+        <Left>0.22917in</Left>
+        <Height>0.4in</Height>
+        <Width>5.41667in</Width>
+        <Style />
+      </Tablix>
+      <Textbox Name="textbox1">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>SQL Server Disk Space</Value>
+                <Style>
+                  <FontFamily>Tahoma</FontFamily>
+                  <FontSize>18pt</FontSize>
+                  <Color>White</Color>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>textbox1</rd:DefaultName>
+        <Top>0.11459in</Top>
+        <Left>0.22917in</Left>
+        <Height>0.33in</Height>
+        <Width>7.38667in</Width>
+        <ZIndex>1</ZIndex>
+        <Style>
+          <BackgroundColor>DimGray</BackgroundColor>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox8">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Sum(Fields!FileSizeMB.Value, "ServerDiskSpace")</Value>
+                <Style>
+                  <FontSize>11pt</FontSize>
+                  <FontWeight>SemiBold</FontWeight>
+                  <Format>0,.00;(0,.00)</Format>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox8</rd:DefaultName>
+        <Top>0.66681in</Top>
+        <Left>2.22222in</Left>
+        <Height>0.25in</Height>
+        <Width>0.87625in</Width>
+        <ZIndex>2</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <BackgroundColor>Linen</BackgroundColor>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox9">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Total SQL Disk Space (MB):</Value>
+                <Style>
+                  <FontWeight>SemiBold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox9</rd:DefaultName>
+        <Top>0.66682in</Top>
+        <Left>0.22917in</Left>
+        <Height>0.25in</Height>
+        <Width>1.9375in</Width>
+        <ZIndex>3</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox4">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>="Total Server: " + CStr(CountDistinct(Fields!ServerName.Value, "ServerDiskSpace"))</Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox4</rd:DefaultName>
+        <Top>0.66682in</Top>
+        <Left>3.4757in</Left>
+        <Height>0.25in</Height>
+        <Width>1.4375in</Width>
+        <ZIndex>4</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+    </ReportItems>
+    <Height>1.43624in</Height>
+    <Style />
+  </Body>
+  <Width>7.74084in</Width>
+  <Page>
+    <PageFooter>
+      <Height>0.375in</Height>
+      <PrintOnFirstPage>true</PrintOnFirstPage>
+      <PrintOnLastPage>true</PrintOnLastPage>
+      <ReportItems>
+        <Textbox Name="Textbox2">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>="Created by: Ayad Shammout"</Value>
+                  <Style>
+                    <FontStyle>Italic</FontStyle>
+                    <FontSize>8pt</FontSize>
+                    <FontWeight>Bold</FontWeight>
+                    <TextDecoration>Underline</TextDecoration>
+                    <Color>White</Color>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style />
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Textbox2</rd:DefaultName>
+          <ActionInfo>
+            <Actions>
+              <Action>
+                <Hyperlink>http://ayadshammout.wordpress.com/</Hyperlink>
+              </Action>
+            </Actions>
+          </ActionInfo>
+          <Top>0.06944in</Top>
+          <Left>0.22917in</Left>
+          <Height>0.17708in</Height>
+          <Width>7.38667in</Width>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <BackgroundColor>DimGray</BackgroundColor>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+      </ReportItems>
+      <Style>
+        <Border>
+          <Style>None</Style>
+        </Border>
+      </Style>
+    </PageFooter>
+    <LeftMargin>1in</LeftMargin>
+    <RightMargin>1in</RightMargin>
+    <TopMargin>1in</TopMargin>
+    <BottomMargin>1in</BottomMargin>
+    <Style />
+  </Page>
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="eMDW">
+      <DataSourceReference>eMDW</DataSourceReference>
+      <rd:SecurityType>None</rd:SecurityType>
+      <rd:DataSourceID>6526185e-5938-41f0-8c4d-83891c877385</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="ServerDiskSpace">
+      <Query>
+        <DataSourceName>eMDW</DataSourceName>
+        <CommandText>SELECT     DB_ServerMain.ServerName, DB_FileData.DatabaseName, DB_FileData.LogicalName, DB_FileData.FileSizeMB, DB_FileData.FileType, 
+                      DB_ServerGroup.GroupName, DB_ServerGroup.SubGroupName
+FROM         DB_FileData INNER JOIN
+                      DB_ServerMain ON DB_FileData.DBServerID = DB_ServerMain.DBServerID INNER JOIN
+                      DB_ServerGroup ON DB_ServerMain.DBServerID = DB_ServerGroup.DBServerID</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="ServerName">
+          <DataField>ServerName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DatabaseName">
+          <DataField>DatabaseName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="LogicalName">
+          <DataField>LogicalName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FileSizeMB">
+          <DataField>FileSizeMB</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="FileType">
+          <DataField>FileType</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="GroupName">
+          <DataField>GroupName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SubGroupName">
+          <DataField>SubGroupName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <EmbeddedImages>
+    <EmbeddedImage Name="DBServer">
+      <MIMEType>image/jpeg</MIMEType>
+      <ImageData>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</ImageData>
+    </EmbeddedImage>
+    <EmbeddedImage Name="Server">
+      <MIMEType>image/jpeg</MIMEType>
+      <ImageData>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</ImageData>
+    </EmbeddedImage>
+  </EmbeddedImages>
+  <Language>en-US</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>2467b914-8dd8-4e0f-bb7e-830b2309497e</rd:ReportID>
+</Report>

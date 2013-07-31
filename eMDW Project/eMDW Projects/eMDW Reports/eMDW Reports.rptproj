@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ToolsVersion="2.0">
+  <State>$base64$PFNvdXJjZUNvbnRyb2xJbmZvIHhtbG5zOnhzZD0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEiIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhtbG5zOmRkbDI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDAzL2VuZ2luZS8yIiB4bWxuczpkZGwyXzI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDAzL2VuZ2luZS8yLzIiIHhtbG5zOmRkbDEwMF8xMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDA4L2VuZ2luZS8xMDAvMTAwIiB4bWxuczpkZGwyMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEwL2VuZ2luZS8yMDAiIHhtbG5zOmRkbDIwMF8yMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEwL2VuZ2luZS8yMDAvMjAwIiB4bWxuczpkZGwzMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDExL2VuZ2luZS8zMDAiIHhtbG5zOmRkbDMwMF8zMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDExL2VuZ2luZS8zMDAvMzAwIiB4bWxuczpkZGw0MDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEyL2VuZ2luZS80MDAiIHhtbG5zOmRkbDQwMF80MDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEyL2VuZ2luZS80MDAvNDAwIiB4bWxuczpkd2Q9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vRGF0YVdhcmVob3VzZS9EZXNpZ25lci8xLjAiPg0KICA8RW5hYmxlZD50cnVlPC9FbmFibGVkPg0KICA8UHJvamVjdE5hbWU+U0FLPC9Qcm9qZWN0TmFtZT4NCiAgPEF1eFBhdGg+U0FLPC9BdXhQYXRoPg0KICA8TG9jYWxQYXRoPlNBSzwvTG9jYWxQYXRoPg0KICA8UHJvdmlkZXI+U0FLPC9Qcm92aWRlcj4NCjwvU291cmNlQ29udHJvbEluZm8+</State>
+  <DataSources>
+    <ProjectItem>
+      <Name>eMDW.rds</Name>
+      <FullPath>eMDW.rds</FullPath>
+    </ProjectItem>
+  </DataSources>
+  <DataSets>
+    <ProjectItem>
+      <Name>DBRole.rsd</Name>
+      <FullPath>DBRole.rsd</FullPath>
+    </ProjectItem>
+  </DataSets>
+  <Reports>
+    <ProjectItem>
+      <Name>1- eSummary - SQL Server Dashboard.rdl</Name>
+      <FullPath>1- eSummary - SQL Server Dashboard.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>2- eSummary - Top 10 Dashboard.rdl</Name>
+      <FullPath>2- eSummary - Top 10 Dashboard.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Backup - Backup Time Analysis Report.rdl</Name>
+      <FullPath>Backup - Backup Time Analysis Report.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Backup - SQL Database Backup Status.rdl</Name>
+      <FullPath>Backup - SQL Database Backup Status.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Database  - Search By Database.rdl</Name>
+      <FullPath>Database  - Search By Database.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Database - SQL Database Features Used.rdl</Name>
+      <FullPath>Database - SQL Database Features Used.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>OLD - Database - SQL Database Information.rdl</Name>
+      <FullPath>OLD - Database - SQL Database Information.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Database - SQL Database Properties.rdl</Name>
+      <FullPath>Database - SQL Database Properties.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>H - Database - SQL DB Details.rdl</Name>
+      <FullPath>H - Database - SQL DB Details.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Object - Search By Object.rdl</Name>
+      <FullPath>Object - Search By Object.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Object - SQL Database Objects.rdl</Name>
+      <FullPath>Object - SQL Database Objects.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>H - Security - Object User Permission.rdl</Name>
+      <FullPath>H - Security - Object User Permission.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Security - SQL DB Permission By Schema.rdl</Name>
+      <FullPath>Security - SQL DB Permission By Schema.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Security - SQL DB Role Membership by Database.rdl</Name>
+      <FullPath>Security - SQL DB Role Membership by Database.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Security - SQL DB Roles Permissions.rdl</Name>
+      <FullPath>Security - SQL DB Roles Permissions.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Security - SQL DB User Permission By Database.rdl</Name>
+      <FullPath>Security - SQL DB User Permission By Database.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Security - SQL DB Users and Permissions.rdl</Name>
+      <FullPath>Security - SQL DB Users and Permissions.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Security - SQL User Lookup.rdl</Name>
+      <FullPath>Security - SQL User Lookup.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Server - InActive SQL Database Information by Server.rdl</Name>
+      <FullPath>Server - InActive SQL Database Information by Server.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Database - SQL Database Information by Server.rdl</Name>
+      <FullPath>Database - SQL Database Information by Server.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Server - SQL Server Information by Group.rdl</Name>
+      <FullPath>Server - SQL Server Information by Group.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Server - SQL Server Information.rdl</Name>
+      <FullPath>Server - SQL Server Information.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Server Data Space Growth - Backup.rdl</Name>
+      <FullPath>Server Data Space Growth - Backup.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Storage - Server Data Space Monthly Growth.rdl</Name>
+      <FullPath>Storage - Server Data Space Monthly Growth.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Storage - Server Data Space Weekly Growth.rdl</Name>
+      <FullPath>Storage - Server Data Space Weekly Growth.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Not Ready Storage - Server Storage Low Space.rdl</Name>
+      <FullPath>Not Ready Storage - Server Storage Low Space.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Storage - SQL Database Growth Report By Application.rdl</Name>
+      <FullPath>Storage - SQL Database Growth Report By Application.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Storage - SQL Database Size Growth.rdl</Name>
+      <FullPath>Storage - SQL Database Size Growth.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Storage - SQL Server Disk Space.rdl</Name>
+      <FullPath>Storage - SQL Server Disk Space.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Storage - SQL Server Disk Utilization By Application.rdl</Name>
+      <FullPath>Storage - SQL Server Disk Utilization By Application.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Storage - SQL Server Disk Utilization.rdl</Name>
+      <FullPath>Storage - SQL Server Disk Utilization.rdl</FullPath>
+    </ProjectItem>
+  </Reports>
+  <Configurations>
+    <Configuration>
+      <Name>Debug</Name>
+      <Platform>Win32</Platform>
+      <Options>
+        <OutputPath>bin\Debug</OutputPath>
+        <TargetServerVersion>SSRS2008</TargetServerVersion>
+        <TargetServerURL>http://infosysreports.caregroup.org/InfoSysReportServer</TargetServerURL>
+        <TargetFolder>/SQL Server - eMDW Reports/</TargetFolder>
+        <TargetDataSourceFolder>/SQL Server - eMDW Reports/Data Sources</TargetDataSourceFolder>
+        <TargetDatasetFolder>/SQL Server - eMDW Reports/Datasets</TargetDatasetFolder>
+        <TargetReportPartFolder>/SQL Server - eMDW Reports/Report Parts</TargetReportPartFolder>
+      </Options>
+    </Configuration>
+    <Configuration>
+      <Name>DebugLocal</Name>
+      <Platform>Win32</Platform>
+      <Options>
+        <OutputPath>bin\DebugLocal</OutputPath>
+        <TargetServerVersion>SSRS2008R2</TargetServerVersion>
+        <TargetFolder>eMDW Reports</TargetFolder>
+        <TargetDataSourceFolder>Data Sources</TargetDataSourceFolder>
+        <TargetDatasetFolder>Datasets</TargetDatasetFolder>
+        <TargetReportPartFolder>Report Parts</TargetReportPartFolder>
+      </Options>
+    </Configuration>
+    <Configuration>
+      <Name>Release</Name>
+      <Platform>Win32</Platform>
+      <Options>
+        <OutputPath>bin\Release</OutputPath>
+        <TargetServerVersion>SSRS2008R2</TargetServerVersion>
+        <TargetFolder>eMDW Reports</TargetFolder>
+        <TargetDataSourceFolder>Data Sources</TargetDataSourceFolder>
+        <TargetDatasetFolder>Datasets</TargetDatasetFolder>
+        <TargetReportPartFolder>Report Parts</TargetReportPartFolder>
+      </Options>
+    </Configuration>
+  </Configurations>
+</Project>

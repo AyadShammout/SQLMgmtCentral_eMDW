@@ -1,0 +1,786 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <Body>
+    <ReportItems>
+      <Tablix Name="DbObjects">
+        <TablixBody>
+          <TablixColumns>
+            <TablixColumn>
+              <Width>3.125in</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>2.16667in</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>3.625in</Width>
+            </TablixColumn>
+          </TablixColumns>
+          <TablixRows>
+            <TablixRow>
+              <Height>0.375in</Height>
+              <TablixCells>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Fieldname">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>Database Name</Value>
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                                <Color>White</Color>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <ZIndex>14</ZIndex>
+                      <Style>
+                        <BackgroundColor>CadetBlue</BackgroundColor>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="textbox12">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>Object Type</Value>
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                                <Color>White</Color>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>textbox12</rd:DefaultName>
+                      <ZIndex>13</ZIndex>
+                      <Style>
+                        <BackgroundColor>CadetBlue</BackgroundColor>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="textbox6">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>Object Name</Value>
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                                <Color>White</Color>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>textbox6</rd:DefaultName>
+                      <ZIndex>12</ZIndex>
+                      <Style>
+                        <BackgroundColor>CadetBlue</BackgroundColor>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+              </TablixCells>
+            </TablixRow>
+            <TablixRow>
+              <Height>0.25in</Height>
+              <TablixCells>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="DatabaseName">
+                      <CanGrow>true</CanGrow>
+                      <CanShrink>true</CanShrink>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!DatabaseName.Value</Value>
+                              <Style>
+                                <FontSize>12pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
+                                <Color>MediumBlue</Color>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>DatabaseName</rd:DefaultName>
+                      <ZIndex>11</ZIndex>
+                      <Style>
+                        <BackgroundColor>Linen</BackgroundColor>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="textbox17">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value />
+                              <Style />
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>textbox17</rd:DefaultName>
+                      <ZIndex>10</ZIndex>
+                      <Style>
+                        <BackgroundColor>Linen</BackgroundColor>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="textbox11">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value />
+                              <Style />
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>textbox11</rd:DefaultName>
+                      <ZIndex>9</ZIndex>
+                      <Style>
+                        <BackgroundColor>Linen</BackgroundColor>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+              </TablixCells>
+            </TablixRow>
+            <TablixRow>
+              <Height>0.25in</Height>
+              <TablixCells>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="textbox1">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value />
+                              <Style />
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>textbox1</rd:DefaultName>
+                      <ZIndex>8</ZIndex>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="ObjectType">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!ObjectType.Value</Value>
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                                <Color>Maroon</Color>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Left</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <ZIndex>7</ZIndex>
+                      <Visibility>
+                        <Hidden>true</Hidden>
+                        <ToggleItem>DatabaseName</ToggleItem>
+                      </Visibility>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="textbox7">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Count(Fields!ObjectName.Value)</Value>
+                              <Style />
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Right</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>textbox7</rd:DefaultName>
+                      <ZIndex>6</ZIndex>
+                      <Visibility>
+                        <Hidden>true</Hidden>
+                        <ToggleItem>DatabaseName</ToggleItem>
+                      </Visibility>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+              </TablixCells>
+            </TablixRow>
+            <TablixRow>
+              <Height>0.25in</Height>
+              <TablixCells>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="textbox5">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value />
+                              <Style />
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>textbox5</rd:DefaultName>
+                      <ZIndex>2</ZIndex>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="textbox4">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value />
+                              <Style />
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>textbox4</rd:DefaultName>
+                      <ZIndex>1</ZIndex>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="ObjectName">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!ObjectName.Value</Value>
+                              <Style>
+                                <TextDecoration>Underline</TextDecoration>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>ObjectName</rd:DefaultName>
+                      <ActionInfo>
+                        <Actions>
+                          <Action>
+                            <Drillthrough>
+                              <ReportName>H - Security - Object User Permission</ReportName>
+                              <Parameters>
+                                <Parameter Name="SrvID">
+                                  <Value>=Fields!DBServerID.Value</Value>
+                                </Parameter>
+                                <Parameter Name="Db">
+                                  <Value>=Fields!DatabaseName.Value</Value>
+                                </Parameter>
+                                <Parameter Name="Obj">
+                                  <Value>=Fields!ObjectName.Value</Value>
+                                </Parameter>
+                              </Parameters>
+                            </Drillthrough>
+                          </Action>
+                        </Actions>
+                      </ActionInfo>
+                      <Visibility>
+                        <Hidden>true</Hidden>
+                        <ToggleItem>ObjectType</ToggleItem>
+                      </Visibility>
+                      <Style>
+                        <Border>
+                          <Style>None</Style>
+                        </Border>
+                        <BackgroundColor>=IIf(RowNumber("DbObjects") Mod 2 ,"White" , "#ECE9D8")</BackgroundColor>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+              </TablixCells>
+            </TablixRow>
+            <TablixRow>
+              <Height>0.25in</Height>
+              <TablixCells>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="textbox8">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value />
+                              <Style />
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>textbox8</rd:DefaultName>
+                      <ZIndex>5</ZIndex>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="textbox9">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value />
+                              <Style />
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>textbox9</rd:DefaultName>
+                      <ZIndex>4</ZIndex>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="textbox16">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value />
+                              <Style />
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>textbox16</rd:DefaultName>
+                      <ZIndex>3</ZIndex>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+              </TablixCells>
+            </TablixRow>
+          </TablixRows>
+        </TablixBody>
+        <TablixColumnHierarchy>
+          <TablixMembers>
+            <TablixMember />
+            <TablixMember />
+            <TablixMember />
+          </TablixMembers>
+        </TablixColumnHierarchy>
+        <TablixRowHierarchy>
+          <TablixMembers>
+            <TablixMember>
+              <KeepWithGroup>After</KeepWithGroup>
+              <KeepTogether>true</KeepTogether>
+            </TablixMember>
+            <TablixMember>
+              <Group Name="Databases">
+                <GroupExpressions>
+                  <GroupExpression>=Fields!DatabaseName.Value</GroupExpression>
+                </GroupExpressions>
+                <Parent>=Fields!ServerName.Value</Parent>
+              </Group>
+              <TablixMembers>
+                <TablixMember>
+                  <KeepWithGroup>After</KeepWithGroup>
+                  <KeepTogether>true</KeepTogether>
+                </TablixMember>
+                <TablixMember>
+                  <Group Name="ObjectType">
+                    <GroupExpressions>
+                      <GroupExpression>=Fields!ObjectType.Value</GroupExpression>
+                    </GroupExpressions>
+                    <Parent>=Fields!DatabaseName.Value</Parent>
+                  </Group>
+                  <TablixMembers>
+                    <TablixMember>
+                      <KeepWithGroup>After</KeepWithGroup>
+                      <KeepTogether>true</KeepTogether>
+                    </TablixMember>
+                    <TablixMember>
+                      <Group Name="DbObjects_Details_Group">
+                        <DataElementName>Detail</DataElementName>
+                      </Group>
+                      <TablixMembers>
+                        <TablixMember />
+                      </TablixMembers>
+                      <Visibility>
+                        <Hidden>true</Hidden>
+                        <ToggleItem>ObjectType</ToggleItem>
+                      </Visibility>
+                      <DataElementName>Detail_Collection</DataElementName>
+                      <DataElementOutput>Output</DataElementOutput>
+                      <KeepTogether>true</KeepTogether>
+                    </TablixMember>
+                  </TablixMembers>
+                  <Visibility>
+                    <Hidden>true</Hidden>
+                    <ToggleItem>DatabaseName</ToggleItem>
+                  </Visibility>
+                </TablixMember>
+              </TablixMembers>
+            </TablixMember>
+            <TablixMember>
+              <KeepWithGroup>Before</KeepWithGroup>
+              <KeepTogether>true</KeepTogether>
+            </TablixMember>
+          </TablixMembers>
+        </TablixRowHierarchy>
+        <DataSetName>DBObjects</DataSetName>
+        <Top>0.375in</Top>
+        <Left>0.125in</Left>
+        <Height>1.375in</Height>
+        <Width>8.91667in</Width>
+        <Style />
+      </Tablix>
+      <Textbox Name="textbox2">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>SQL Server Databases and Objects on:  </Value>
+                <Style>
+                  <FontSize>12pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                  <Color>White</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>=First(Fields!ServerName.Value, "DBObjects")</Value>
+                <Style>
+                  <FontSize>12pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                  <Color>White</Color>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <Left>0.125in</Left>
+        <Height>0.25in</Height>
+        <Width>8.91667in</Width>
+        <ZIndex>1</ZIndex>
+        <Style>
+          <BackgroundColor>DimGray</BackgroundColor>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+    </ReportItems>
+    <Height>1.86458in</Height>
+    <Style />
+  </Body>
+  <Width>9.22918in</Width>
+  <Page>
+    <PageFooter>
+      <Height>0.41667in</Height>
+      <PrintOnFirstPage>true</PrintOnFirstPage>
+      <PrintOnLastPage>true</PrintOnLastPage>
+      <ReportItems>
+        <Textbox Name="Textbox2">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>="Created by: Ayad Shammout"</Value>
+                  <Style>
+                    <FontStyle>Italic</FontStyle>
+                    <FontSize>8pt</FontSize>
+                    <FontWeight>Bold</FontWeight>
+                    <TextDecoration>Underline</TextDecoration>
+                    <Color>White</Color>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style />
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Textbox2</rd:DefaultName>
+          <ActionInfo>
+            <Actions>
+              <Action>
+                <Hyperlink>http://ayadshammout.wordpress.com/</Hyperlink>
+              </Action>
+            </Actions>
+          </ActionInfo>
+          <Top>0.06944in</Top>
+          <Left>0.125in</Left>
+          <Height>0.17708in</Height>
+          <Width>8.91667in</Width>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <BackgroundColor>DimGray</BackgroundColor>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+      </ReportItems>
+      <Style>
+        <Border>
+          <Style>None</Style>
+        </Border>
+      </Style>
+    </PageFooter>
+    <LeftMargin>1in</LeftMargin>
+    <RightMargin>1in</RightMargin>
+    <TopMargin>1in</TopMargin>
+    <BottomMargin>1in</BottomMargin>
+    <Style />
+  </Page>
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="eMDW">
+      <DataSourceReference>eMDW</DataSourceReference>
+      <rd:SecurityType>None</rd:SecurityType>
+      <rd:DataSourceID>60cbd05a-764c-4539-ab31-dd701899b137</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="DBObjects">
+      <Query>
+        <DataSourceName>eMDW</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name="@Srv">
+            <Value>=Parameters!Srv.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandText>SELECT     DB_ServerMain.ServerName, DB_Objects.DatabaseName, DB_Objects.ObjectType, 
+                      DB_Objects.SchemaName + '.' + DB_Objects.ObjectName AS ObjectName, DB_Objects.DBServerID
+FROM         DB_Objects INNER JOIN
+                      DB_ServerMain ON DB_Objects.DBServerID = DB_ServerMain.DBServerID
+WHERE     (DB_ServerMain.ServerName = @Srv)
+ORDER BY DB_Objects.DatabaseName, DB_Objects.ObjectType, DB_Objects.SchemaName, ObjectName</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="ServerName">
+          <DataField>ServerName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DatabaseName">
+          <DataField>DatabaseName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ObjectType">
+          <DataField>ObjectType</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ObjectName">
+          <DataField>ObjectName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DBServerID">
+          <DataField>DBServerID</DataField>
+          <rd:TypeName>System.Int16</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="Servers">
+      <Query>
+        <DataSourceName>eMDW</DataSourceName>
+        <CommandText>SELECT     ServerName, ActiveFlag
+FROM         DB_ServerMain
+WHERE     (ActiveFlag = 'Y')
+ORDER BY ServerName</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="ServerName">
+          <DataField>ServerName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ActiveFlag">
+          <DataField>ActiveFlag</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <ReportParameters>
+    <ReportParameter Name="Srv">
+      <DataType>String</DataType>
+      <Prompt>Server Name</Prompt>
+      <ValidValues>
+        <DataSetReference>
+          <DataSetName>Servers</DataSetName>
+          <ValueField>ServerName</ValueField>
+          <LabelField>ServerName</LabelField>
+        </DataSetReference>
+      </ValidValues>
+    </ReportParameter>
+  </ReportParameters>
+  <EmbeddedImages>
+    <EmbeddedImage Name="compare_ts">
+      <MIMEType>image/gif</MIMEType>
+      <ImageData>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</ImageData>
+    </EmbeddedImage>
+  </EmbeddedImages>
+  <Language>en-US</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>b6c5f5ff-362a-4986-b544-3c3e7254bda2</rd:ReportID>
+</Report>
